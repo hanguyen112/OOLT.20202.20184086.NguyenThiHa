@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Triangle {
+	public static void main(String[]args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the  triangle's size (number of line(s)):");
+		int n = sc.nextInt();
+		//int space = sc.nextInt();
+		for(int i=1; i<=n; i++) {
+			for(int j=1; i<=(i + 2); j= j + 2) {
+				//for(space = n; (space >= 1 && space <=n); space--)
+					System.out.println(" ");
+				
+				    System.out.println("*");
+			}
+		}
+		System.out.println("\n");
+	}
+
+}
+
+/*
+#include<stdio.h>
+int main(){
+  int size,line,star,space;
+
+  printf("Enter the  triangle's size (number of line(s)): ");
+  scanf("%d",&size);
+
+  // tam giac vuong
+  for (line=1;line<=size;line++){
+     for (star=1;star<=line;star++) printf("*");
+     printf("\n");
+  }
+
+  printf("\n");
+  // tam giac can
+  for (line=1;line<=size;line++)
+    {
+      for (star=1;star<=(line+2);star=star+2)
+       {
+	 for (space=size;(space>=1 && space<=size);space--) printf(" ");  
+	 printf("*");
+       }
+	printf("\n");
+    }
+}*/

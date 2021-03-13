@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Ex5 {
+       
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double a, b;
+        System.out.println("Input the first number: ");
+		double a = sc.nextDouble();
+		System.out.println("Input the second number: ");
+		double b = sc.nextDouble();
+		System.out.println("Input the second number: ");
+		System.out.println("a + b = " + (a + b));
+		System.out.println("a - b = " + (a - b));
+		System.out.println("a * b = " + (a * b));
+		if(b==0) {
+			System.out.println("Cannot caculate because b = 0");
+		}
+		else 
+		System.out.println("a / b = " + (a / b));
+	}
+
+}

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class DaysofAMonth {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int month = sc.nextInt();
+		switch(month) {
+		// Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày.
+		case 1:
+		case 3:
+		case 5: 
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			System.out.println(+ month + " has 31 days.");
+			break;
+		
+		// Các tháng 4, 6, 9, 11 có 30 ngày
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.println(+month+ " has 30 days");
+			break;
+		// Tháng 2 năm nhuận có 29 ngày, nếu không thì có 28 ngày
+		case 2: 
+			System.out.println("Enter the year: ");
+			int year = sc.nextInt();
+			if((year % 4 == 0 && year % 100 != 0 ) || (year % 400 == 0)) {
+				System.out.println(+month+" " +year+" has 29 days");
+			}
+				else {
+				System.out.println(+month +" "+ year+ " has 28 days");
+				}
+				break;
+				default:
+					System.out.println("Invalid month !!! Please re-enter ");
+			}
+		}
+}
+

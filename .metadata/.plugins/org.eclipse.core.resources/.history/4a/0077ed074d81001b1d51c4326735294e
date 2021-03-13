@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Triangle {
+	public static void main(String[]args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the  triangle's size (number of line(s)):");
+		int n = sc.nextInt();
+		//int space = sc.nextInt();
+		for(int i=1; i<=n; i++) {
+			for(int j=1; i<= n-i; j= j++) {
+				//for(space = n; (space >= 1 && space <=n); space--)
+					System.out.println(" ");
+			}
+		for(int k = 1; k<= 2*i-1; k++) {	
+				    System.out.println("* ");
+				    }
+		            System.out.println("");
+		}
+			
+		
+	}
+
+}
